@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<h1 id="loading">Loading...</h1>
+<xmp theme="united" id="data" style="display:none;">
+</xmp>
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+var host = 'http://' + location.host;
+
+$.ajax({
+    url: host + '/documents/' + name + '.md',
+    type: "GET",
+    dataType: "html",
+    success: function (result) {
+        $('#loading').remove();
+        $('#data').text(result);
+        $.getScript(host + '/markdown-parser/strapdown.js');
+        document.title = name;
+    }
+});
+</script>
+</html>
