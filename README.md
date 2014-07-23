@@ -3,7 +3,7 @@ Home Page
 
 ### Main Part
 
-+ WebGuide：A simple web guide for myself.
++ WebGuide：A simple web guide for myself. (not finished)
 + Slides
 
 
