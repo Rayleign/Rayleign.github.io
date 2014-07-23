@@ -15,13 +15,13 @@ function GetQueryString(name) {
 var host = 'http://' + location.host;
 var name = GetQueryString('name');
 $.ajax({
-    url: host + '/Rayleign.github.io/documents/'+name+'.md',
+    url: host + '/documents/'+name+'.md',
     type: "GET",
     dataType: "html",
     success: function (result) {
         $('#loading').remove();
         $('#data').text(result);
-        $.getScript(host + '/Rayleign.github.io/markdown-parser/strapdown.js');
+        $.getScript(host + '/markdown-parser/strapdown.js');
         document.title = name;
     }
 });
