@@ -2,14 +2,20 @@
 <html>
 <meta charset="UTF-8">
 <h1 id="loading">Loading...</h1>
-<xmp theme="united" id="data" style="display:none;">
+<xmp theme="readable" id="data" style="display:none;">
 </xmp>
-<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script>
-var host = 'http://' + location.host;
 
+function GetQueryString(name) {
+   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+   var r = window.location.search.substr(1).match(reg);
+   if (r!=null) return unescape(r[2]); return null;
+}
+var host = 'http://' + location.host;
+var name = GetQueryString('name');
 $.ajax({
-    url: host + '/documents/' + name + '.md',
+    url: host + '/documents/'+name+'.md',
     type: "GET",
     dataType: "html",
     success: function (result) {
