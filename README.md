@@ -1,4 +1,13 @@
-Rayleign.github.io
+Home Page
 ==================
 
-个人主页
+### Main Part
+
++ WebGuide：A simple web guide for myself.
++ Slides
+
+
+### Feature
+
++ Documents in markdown pattern
++ Slides in Google IO HTML5 
