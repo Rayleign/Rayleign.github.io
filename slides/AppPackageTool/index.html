@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <!--This one seems to work all the time, but really small on ipad-->
+        <!--<meta name="viewport" content="initial-scale=0.4">-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" media="all" href="theme/css/default.css">
+        <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+        <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+        <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+    </head>
+    <body style="opacity: 0">
+    <slides>
+        <!--<slides class="layout-widescreen">-->
+
+        <!--安居客Logo-->
+        <slide class="logoslide nobackground">
+            <article class="flexbox vcenter">
+                <span><img src="images/anjuke_logo.png"></span>
+            </article>
+        </slide>
+
+        <!--标题  自我介绍-->
+        <slide class="title-slide segue nobackground">
+            <!--<aside class="gdbar"><img src="images/anjuke_logo_128.png"></aside>-->
+            <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+            <hgroup class="auto-fadein">
+                <h1 data-config-title><!-- populated from slide_config.json --></h1>
+                <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+                <p data-config-presenter><!-- populated from slide_config.json --></p>
+            </hgroup>
+        </slide>
+
+        <!--项目介绍-->
+        <slide class="title-slide segue">
+            <aside class="gdbar"><h1>项目介绍</h1></aside>
+            <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+            <hgroup class="auto-fadein">
+                <ul class="build">
+                    <li><h3>项 目 名 ： AppPackageTool</h3></li>
+                    <li><h3>项目成员：</h3>
+                        <ul class="build">
+                            <li>刘瑞丽</li>
+                            <li>张利强</li>
+                            <li>吴思聪</li>
+                            <li>刘喜东</li>
+                        </ul>
+                    </li>
+                </ul>
+                <br/><br/><br/>
+            </hgroup>
+        </slide>
+        
+        <!--主要功能-->
+        <slide class="title-slide segue">
+            <aside class="gdbar"><h1>主要功能</h1></aside>
+            <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+            <hgroup class="auto-fadein">
+                <ul class="build">
+                    <li><h3>Android</h3>
+                     <ul class="build fade">
+                            <li>Daily build</li>
+                            <li>线上打包</li>
+                     </ul>   
+                    </li>
+                    <li><h3>IOS</h3>
+                        <ul class="build fade">
+                            <li>打包</li>
+                        </ul>
+                    </li>
+                    <li><h3>文件管理</h3></li>
+                    <li><h3>操作日志</h3></li>
+                    <li><h3>配置</h3></li>
+                </ul>
+            </hgroup>
+        </slide>
+        
+        <!--界面原型-->
+        <slide>
+            <article class="flexbox vcenter">
+                <img src="images/android.png"/>
+            </article>
+        </slide>
+        
+        <!--打包流程图-->
+        <slide>
+            <hgroup>
+                <h2>打包流程图</h2>
+            </hgroup>
+            <article class="flexbox vcenter">
+                <img src="images/pac.png" />
+            </article>
+        </slide>
+        
+        <!--Job-->
+        <slide>
+            <hgroup>
+                <h2>Job</h2>
+            </hgroup>
+            <article class="flexbox vcenter">
+                <img src="images/job.png" />
+            </article>
+        </slide>
+
+        <slide class="thank-you-slide segue nobackground">
+            <article class="flexbox vleft auto-fadein">
+                <h2>&lt;Thank You!&gt;</h2>
+            </article>
+            <p class="auto-fadein" data-config-contact>
+                <!-- populated from slide_config.json -->
+            </p>
+        </slide>
+        
+        <slide class="logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <span><img src="images/anjuke_logo.png"></span>
+            </article>
+        </slide>
+
+        <slide class="backdrop"></slide>
+
+    </slides>
+
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = 'js/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!--[if IE]>
+    <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+    <![endif]-->
+
+</body>
+</html>
