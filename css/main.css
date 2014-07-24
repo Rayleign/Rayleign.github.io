@@ -6,3 +6,7 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
 a:link,a:visited{
   text-decoration:none;  /*超链接无下划线*/
 }
+
+.font-normal{
+  font-weight:normal;
+}
