@@ -10,3 +10,20 @@ a:link,a:visited{
 .font2normal{
   font-weight:normal;
 }
+
+.nav {
+  margin-top:20px;	
+}
+
+.well{
+  margin-top:20px;
+}
+
+#search{
+ margin-left:550px;
+ margin-bottom:0px;
+}
+
+#guidelink{
+ font-size:20px;
+}
