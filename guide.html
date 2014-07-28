@@ -5,14 +5,17 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="css/main.css" rel="stylesheet">
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
   </head>
   <body style="width:1000px;margin:0 auto;" >
 
 <div class="tabbable"> 
 <ul class="nav nav-tabs">
     <li class="active"><a href="#tab1" data-toggle="tab">安居客</a></li>
-    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+    <li><a href="#tab2" data-toggle="tab">好玩儿</a></li>
+<li><a href="#tab3" data-toggle="tab">学习</a></li>
 	<li><form id="search" class="form-search ">  
   <div class="input-append">  
     <input type="text" class="span2 search-query">  
@@ -22,7 +25,7 @@
  </ul>
   <div class="tab-content">
     <div class="tab-pane active" id="tab1">
-	<table id="guidelink">
+	<table id="guidelink"><tbody>
 	<tr>
 	<td><a href="http://home.corp.anjuke.com/">Home</a></td>
 	<td><a href="http://kq.corp.anjuke.com/">考勤</a></td>
@@ -47,10 +50,13 @@
 	<td><a href="http://10.10.6.6:8080/service-internal/">线上-API</a></td>
 	<td><a href="http://git.corp.anjuke.com/">Git</a></td>
 	</tr>
-	</table>
+	</tbody></table>
     </div>
     <div class="tab-pane" id="tab2">
       <p>Howdy, I'm in Section 2.</p>
+    </div>
+    <div class="tab-pane" id="tab3">
+      <p>Howdy, I'm in 学习.</p>
     </div>
   </div>
 </div></body>

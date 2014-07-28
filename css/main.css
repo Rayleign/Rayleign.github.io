@@ -15,9 +15,6 @@ a:link,a:visited{
   margin-top:20px;	
 }
 
-.well{
-  margin-top:20px;
-}
 
 #search{
  margin-left:550px;
@@ -25,5 +22,5 @@ a:link,a:visited{
 }
 
 #guidelink{
- font-size:20px;
+ font-size:18px;
 }
