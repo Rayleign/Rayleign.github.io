@@ -15,12 +15,15 @@ a:link,a:visited{
   margin-top:20px;	
 }
 
-
 #search{
- margin-left:550px;
+ margin-left:500px;
  margin-bottom:0px;
 }
 
-#guidelink{
- font-size:18px;
+.tab-content{
+ font-size:16px;
+}
+
+.unstyled li{
+  line-height:200%;
 }
